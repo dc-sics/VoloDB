@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+import "Column.proto";
+import "Operation.proto";
+
+//extends Operation
+message ManipulationOperation {
+	repeated StoreInfo store_info = 1;
+	repeated ColumnValue primary_key = 2;
+}
+
+message SetOperation {
+	repeated StoreInfo store_info = 1;
+	repeated ColumnValue primary_key = 2;
+	repeated ColumnValue value = 3;
+
+}
+
+message DeleteOperation {
+	repeated StoreInfo store_info = 1;
+	repeated ColumnValue primary_key = 2;
+}
+
+message GetOperation {
+	repeated StoreInfo store_info = 1;
+	repeated ColumnValue primary_key = 2;
+	repeated ColumnValue value = 3;
+}

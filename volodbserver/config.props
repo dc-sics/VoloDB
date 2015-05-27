@@ -1,0 +1,19 @@
+[settings]
+no_definer_threads = 5
+no_executor_threads = 30
+#single_cluster_connection = true
+transport_poll_wait = 10
+store_poll_wait = 10
+store_port = 5570
+mysql_server_ip = localhost
+mysql_port = 3306
+ndb_connect_string = localhost
+ndb_port = 1186
+mysql_user_name = hop
+mysql_password = hop
+database=vdb
+log_level=INFO
+
+[test]
+warmup_time=5
+total_time=4

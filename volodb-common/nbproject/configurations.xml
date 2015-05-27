@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="AttributeUtils"
+                     displayName="AttributeUtils"
+                     projectFiles="true">
+        <itemPath>AttributeUtils/ColumnsValueBuilder.cpp</itemPath>
+        <itemPath>AttributeUtils/ColumnsValueBuilder.h</itemPath>
+        <itemPath>AttributeUtils/ColumnsValueDecoder.cpp</itemPath>
+        <itemPath>AttributeUtils/ColumnsValueDecoder.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Config" displayName="Config" projectFiles="true">
+        <itemPath>Config/ConfigFileReader.cpp</itemPath>
+        <itemPath>Config/ConfigFileReader.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Frame" displayName="Frame" projectFiles="true">
+        <itemPath>Frame/FrameBuilder.cpp</itemPath>
+        <itemPath>Frame/FrameBuilder.h</itemPath>
+        <itemPath>Frame/FrameDecoder.cpp</itemPath>
+        <itemPath>Frame/FrameDecoder.h</itemPath>
+        <itemPath>Frame/FrameUtils.cpp</itemPath>
+        <itemPath>Frame/FrameUtils.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Logging" displayName="Logging" projectFiles="true">
+        <itemPath>Logging/log.h</itemPath>
+        <itemPath>Logging/log1.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="OperationUtils"
+                     displayName="OperationUtils"
+                     projectFiles="true">
+        <itemPath>OperationUtils/OperationUtils.cpp</itemPath>
+        <itemPath>OperationUtils/OperationUtils.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="ProtoBuf" displayName="ProtoBuf" projectFiles="true">
+        <itemPath>ProtoBuf/Column.pb.cc</itemPath>
+        <itemPath>ProtoBuf/Column.pb.h</itemPath>
+        <itemPath>ProtoBuf/DefinitionOperation.pb.cc</itemPath>
+        <itemPath>ProtoBuf/DefinitionOperation.pb.h</itemPath>
+        <itemPath>ProtoBuf/Filter.pb.cc</itemPath>
+        <itemPath>ProtoBuf/Filter.pb.h</itemPath>
+        <itemPath>ProtoBuf/Frame.pb.cc</itemPath>
+        <itemPath>ProtoBuf/Frame.pb.h</itemPath>
+        <itemPath>ProtoBuf/ManipulationOperations.pb.cc</itemPath>
+        <itemPath>ProtoBuf/ManipulationOperations.pb.h</itemPath>
+        <itemPath>ProtoBuf/Operation.pb.cc</itemPath>
+        <itemPath>ProtoBuf/Operation.pb.h</itemPath>
+        <itemPath>ProtoBuf/Result.pb.cc</itemPath>
+        <itemPath>ProtoBuf/Result.pb.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Test" displayName="Test" projectFiles="true">
+        <itemPath>Test/TaskBase.h</itemPath>
+        <itemPath>Test/TestBase.cpp</itemPath>
+        <itemPath>Test/TestBase.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Transport" displayName="Transport" projectFiles="true">
+        <itemPath>Transport/zhelpers.hpp</itemPath>
+        <itemPath>Transport/zmq.hpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Utils" displayName="Utils" projectFiles="true">
+        <itemPath>Utils/Utils.cpp</itemPath>
+        <itemPath>Utils/Utils.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>Config</Elem>
+    <Elem>Logging</Elem>
+    <Elem>ProtoBuf</Elem>
+    <Elem>Test</Elem>
+    <Elem>Transport</Elem>
+    <Elem>Utils</Elem>
+    <Elem>Frame</Elem>
+    <Elem>AttributeUtils</Elem>
+    <Elem>OperationUtils</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+          <commandLine>-D_GLIBCXX_USE_NANOSLEEP</commandLine>
+        </ccTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="AttributeUtils/ColumnsValueBuilder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+      </item>
+      <item path="AttributeUtils/ColumnsValueBuilder.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="AttributeUtils/ColumnsValueDecoder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="AttributeUtils/ColumnsValueDecoder.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Config/ConfigFileReader.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Config/ConfigFileReader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Frame/FrameBuilder.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Frame/FrameBuilder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Frame/FrameDecoder.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Frame/FrameDecoder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Frame/FrameUtils.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Frame/FrameUtils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Logging/log.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Logging/log1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OperationUtils/OperationUtils.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="OperationUtils/OperationUtils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Column.pb.cc" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="ProtoBuf/Column.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/DefinitionOperation.pb.cc" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="ProtoBuf/DefinitionOperation.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Filter.pb.cc" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="ProtoBuf/Filter.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Frame.pb.cc" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="ProtoBuf/Frame.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/ManipulationOperations.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+      </item>
+      <item path="ProtoBuf/ManipulationOperations.pb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ProtoBuf/Operation.pb.cc" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="ProtoBuf/Operation.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Result.pb.cc" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="ProtoBuf/Result.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TaskBase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TestBase.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Test/TestBase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transport/zhelpers.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transport/zmq.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Utils/Utils.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Utils/Utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+          <commandLine>-D_GLIBCXX_USE_NANOSLEEP</commandLine>
+        </ccTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="AttributeUtils/ColumnsValueBuilder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="AttributeUtils/ColumnsValueBuilder.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="AttributeUtils/ColumnsValueDecoder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="AttributeUtils/ColumnsValueDecoder.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Config/ConfigFileReader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Config/ConfigFileReader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Frame/FrameBuilder.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Frame/FrameBuilder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Frame/FrameDecoder.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Frame/FrameDecoder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Frame/FrameUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Frame/FrameUtils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Logging/log.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Logging/log1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OperationUtils/OperationUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OperationUtils/OperationUtils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Column.pb.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Column.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/DefinitionOperation.pb.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProtoBuf/DefinitionOperation.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Filter.pb.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Filter.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Frame.pb.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Frame.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/ManipulationOperations.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="ProtoBuf/ManipulationOperations.pb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ProtoBuf/Operation.pb.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Operation.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Result.pb.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProtoBuf/Result.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TaskBase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TestBase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Test/TestBase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transport/zhelpers.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transport/zmq.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Utils/Utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils/Utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

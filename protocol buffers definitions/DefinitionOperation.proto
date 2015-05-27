@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "Column.proto";
+import "Operation.proto";
+
+//extends Operation
+message DefinitionOpertion {
+	required StoreInfo store_info = 1;
+}
+
+//extends DefinitionOpertion
+message CreateDatabaseOperation {
+	required string database_name = 1;
+}
+
+//extends DefinitionOpertion
+message DropDatabaseOperation {
+	required string database_name = 1;
+}
+
+//extends DefinitionOpertion
+message CreateStoreOperation {
+	required StoreInfo store_info = 1;
+	repeated ColumnInfo column = 2;
+//	optional bool create_database_if_required = 3;
+}
+
+//extends DefinitionOpertion
+message DropStoreOperation {
+	required StoreInfo store_info = 1;
+}

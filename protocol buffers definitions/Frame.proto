@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+message FrameItem
+{
+	enum Type
+	{
+		NONE = 1;
+		CREATE_DATABASE = 2;
+		DROP_DATABASE = 3;
+		CREATE_STORE = 4;
+		DROP_STORE = 5;
+		SET = 6;
+		GET = 7;
+		DELETE = 8;
+		SERVER_RESPONSE = 9;
+	}
+	required Type type = 1;
+	required bytes data = 2;
+	optional string identifier = 3;
+}
+
+message Frame
+{
+	optional string identifier = 1;
+	repeated FrameItem item = 2;
+}

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Cache" displayName="Cache" projectFiles="true">
+        <itemPath>Cache/TableInfoCache.cpp</itemPath>
+        <itemPath>Cache/TableInfoCache.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Store" displayName="Store" projectFiles="true">
+        <logicalFolder name="Transaction" displayName="Transaction" projectFiles="true">
+        </logicalFolder>
+        <itemPath>Store/NDBMessageExecutor.cpp</itemPath>
+        <itemPath>Store/NDBMessageExecutor.h</itemPath>
+        <itemPath>Store/NDBMessageProcessor.cpp</itemPath>
+        <itemPath>Store/NDBMessageProcessor.h</itemPath>
+        <itemPath>Store/Store.cpp</itemPath>
+        <itemPath>Store/Store.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Test" displayName="Test" projectFiles="true">
+        <itemPath>Test/ServerTransportTest.h</itemPath>
+        <itemPath>Test/TestExecutor.cpp</itemPath>
+        <itemPath>Test/TestExecutor.h</itemPath>
+        <itemPath>Test/TestStats.cpp</itemPath>
+        <itemPath>Test/TestStats.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Transport" displayName="Transport" projectFiles="true">
+        <itemPath>Transport/ServerTransport.cpp</itemPath>
+        <itemPath>Transport/ServerTransport.h</itemPath>
+        <itemPath>Transport/ServerTransportDelegate.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Utils" displayName="Utils" projectFiles="true">
+        <itemPath>Utils/TransportUtils.cpp</itemPath>
+        <itemPath>Utils/TransportUtils.h</itemPath>
+      </logicalFolder>
+      <itemPath>config.props</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>test.cfg</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>Store</Elem>
+    <Elem>Test</Elem>
+    <Elem>Transport</Elem>
+    <Elem>Utils</Elem>
+    <Elem>Cache</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+          <incDir>
+            <pElem>/usr/local/mysql/include</pElem>
+            <pElem>/usr/local/mysql/include/storage/ndb/ndbapi</pElem>
+            <pElem>/usr/local/mysql/include/storage/ndb</pElem>
+            <pElem>../volodb-common</pElem>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+          <commandLine>-D_GLIBCXX_USE_NANOSLEEP</commandLine>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibFileItem>/usr/local/mysql/lib/libndbclient_static.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/mysql/lib/libmysqlclient.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/mysql/lib/libmysqld.a</linkerLibFileItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../volodb-common"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../volodb-common"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb-common.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibFileItem>/usr/local/lib/libzmq.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libprotobuf.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libboost_program_options.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libboost_thread.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libboost_system.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lpthread -ldl -lrt</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="Cache/TableInfoCache.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Cache/TableInfoCache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Store/NDBMessageExecutor.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Store/NDBMessageExecutor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Store/NDBMessageProcessor.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Store/NDBMessageProcessor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Store/Store.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Store/Store.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/ServerTransportTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TestExecutor.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Test/TestExecutor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TestStats.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Test/TestStats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transport/ServerTransport.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Transport/ServerTransport.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transport/ServerTransportDelegate.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utils/TransportUtils.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Utils/TransportUtils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.props" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="test.cfg" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>/usr/local/mysql/include</pElem>
+            <pElem>/usr/local/mysql/include/storage/ndb/ndbapi</pElem>
+            <pElem>/usr/local/mysql/include/storage/ndb</pElem>
+            <pElem>../volodb-common</pElem>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+          <commandLine>-D_GLIBCXX_USE_NANOSLEEP</commandLine>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibFileItem>/usr/local/mysql/lib/libndbclient_static.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/mysql/lib/libmysqlclient.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/mysql/lib/libmysqld.a</linkerLibFileItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../volodb-common"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../volodb-common"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb-common.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibFileItem>/usr/local/lib/libzmq.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libprotobuf.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libboost_program_options.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libboost_thread.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libboost_system.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lpthread -ldl -lrt</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="Cache/TableInfoCache.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cache/TableInfoCache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Store/NDBMessageExecutor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Store/NDBMessageExecutor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Store/NDBMessageProcessor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Store/NDBMessageProcessor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Store/Store.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Store/Store.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/ServerTransportTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TestExecutor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Test/TestExecutor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TestStats.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Test/TestStats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transport/ServerTransport.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Transport/ServerTransport.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transport/ServerTransportDelegate.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Utils/TransportUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utils/TransportUtils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.props" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test.cfg" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

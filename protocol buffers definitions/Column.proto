@@ -1,0 +1,47 @@
+syntax = "proto2";
+
+message Column {
+
+	enum Type { //Mapped to values of NDB type enum
+		BOOL = 1;
+		INT32 = 7;
+		UINT32 = 8;
+		INT64 = 9;
+		UINT64 = 10;
+		FLOAT = 11;
+		DOUBLE = 12;
+		CHAR = 14;
+		VARCHAR = 23;
+		VARBINARY = 24;
+	}
+
+	required string name = 1;
+	optional Type type = 2;
+	optional bool primary_key = 3;
+	optional bool distribution_key = 4;
+}
+
+//extends Column
+message ColumnInfo {
+	required string name = 1;
+	required Column.Type type = 2;
+	optional bool primary_key = 3;
+	optional bool distribution_key = 4;
+//	optional bool index = 5;
+	optional int32 length = 6;
+//	optional ColumnReference reference = 7;
+}
+
+//extends Column
+message ColumnValue {
+	required string name = 1;
+	optional Column.Type type = 2;
+	optional bool primary_key = 3;
+	optional bool distribution_key = 4;
+	required bytes value = 5;
+}
+
+//message ColumnReference {
+//	required string store_name = 1;
+//	required string column_name = 2;
+//}

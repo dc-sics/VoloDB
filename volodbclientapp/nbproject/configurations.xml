@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Test" displayName="Test" projectFiles="true">
+        <itemPath>Test/BasicTaskExecution.h</itemPath>
+        <itemPath>Test/BasicTest.h</itemPath>
+        <itemPath>Test/BasicTransportTask.h</itemPath>
+        <itemPath>Test/ClientTransportTest.h</itemPath>
+        <itemPath>Test/CreateStoreTestAllTypes.h</itemPath>
+        <itemPath>Test/DropStoreTestAllTypes.h</itemPath>
+        <itemPath>Test/PruneIndexScan.h</itemPath>
+        <itemPath>Test/SetTestSimple.h</itemPath>
+        <itemPath>Test/TestExecutor.cpp</itemPath>
+        <itemPath>Test/TestExecutor.h</itemPath>
+      </logicalFolder>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>test.cfg</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>Test</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+          <incDir>
+            <pElem>/usr/local/include</pElem>
+            <pElem>../volodb-common</pElem>
+            <pElem>../volodb-client</pElem>
+          </incDir>
+          <commandLine>-D_GLIBCXX_USE_NANOSLEEP</commandLine>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../volodb-client"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../volodb-client"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb-client.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../volodb-common"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../volodb-common"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb-common.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibFileItem>/usr/local/lib/libzmq.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libprotobuf.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libboost_program_options.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lpthread -ldl -lrt</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="Test/BasicTaskExecution.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/BasicTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/BasicTransportTask.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/ClientTransportTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/CreateStoreTestAllTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/DropStoreTestAllTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/PruneIndexScan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/SetTestSimple.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TestExecutor.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Test/TestExecutor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="test.cfg" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>/usr/local/include</pElem>
+            <pElem>../volodb-common</pElem>
+            <pElem>../volodb-client</pElem>
+          </incDir>
+          <commandLine>-D_GLIBCXX_USE_NANOSLEEP</commandLine>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../volodb-client"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../volodb-client"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb-client.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../volodb-common"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../volodb-common"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb-common.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibFileItem>/usr/local/lib/libzmq.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libprotobuf.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libboost_program_options.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lpthread -ldl -lrt</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="Test/BasicTaskExecution.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/BasicTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/BasicTransportTask.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/ClientTransportTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/CreateStoreTestAllTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/DropStoreTestAllTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/PruneIndexScan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/SetTestSimple.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test/TestExecutor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Test/TestExecutor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test.cfg" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

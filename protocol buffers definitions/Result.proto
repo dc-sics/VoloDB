@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "Column.proto";
+import "Frame.proto";
+
+message Row
+{
+	repeated ColumnValue column = 1;
+}
+
+message OperationResult
+{
+	repeated Row row = 1;
+	required FrameItem.Type type = 2;
+}
+
+message Result
+{
+	required string transaction_identifier = 1;
+	repeated OperationResult result = 2;
+	optional int32 error_code = 3;
+	optional string error_description = 4;
+}
