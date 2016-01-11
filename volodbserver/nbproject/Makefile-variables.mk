@@ -7,13 +7,13 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Release configuration
-CND_PLATFORM_Release=GNU-MacOSX
-CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
+CND_PLATFORM_Release=GNU-Linux
+CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
 CND_ARTIFACT_NAME_Release=volodbserver
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/volodbserver
-CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/volodbserver
+CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
 CND_PACKAGE_NAME_Release=volodbserver.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/volodbserver.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/volodbserver.tar
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX

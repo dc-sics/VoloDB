@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-MacOSX
-CND_DLIB_EXT=dylib
+CND_PLATFORM=GNU-Linux
+CND_DLIB_EXT=so
 CND_CONF=Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -53,21 +53,25 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=../volodb-client/dist/Release/GNU-MacOSX/libvolodb-client.a ../volodb-common/dist/Release/GNU-MacOSX/libvolodb-common.a /usr/local/lib/libzmq.a /usr/local/lib/libprotobuf.a /usr/local/lib/libboost_program_options.a
+LDLIBSOPTIONS=../volodb-client/dist/Release/GNU-Linux/libvolodb-client.a ../volodb-common/dist/Release/GNU-Linux/libvolodb-common.a /usr/lib/x86_64-linux-gnu/libzmq.a /usr/lib/x86_64-linux-gnu/libprotobuf.a /usr/lib/x86_64-linux-gnu/libboost_program_options.a /usr/lib/x86_64-linux-gnu/libpgm.a /usr/lib/x86_64-linux-gnu/libsodium.a
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
 	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: ../volodb-client/dist/Release/GNU-MacOSX/libvolodb-client.a
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: ../volodb-client/dist/Release/GNU-Linux/libvolodb-client.a
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: ../volodb-common/dist/Release/GNU-MacOSX/libvolodb-common.a
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: ../volodb-common/dist/Release/GNU-Linux/libvolodb-common.a
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: /usr/local/lib/libzmq.a
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: /usr/lib/x86_64-linux-gnu/libzmq.a
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: /usr/local/lib/libprotobuf.a
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: /usr/lib/x86_64-linux-gnu/libprotobuf.a
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: /usr/local/lib/libboost_program_options.a
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: /usr/lib/x86_64-linux-gnu/libboost_program_options.a
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: /usr/lib/x86_64-linux-gnu/libpgm.a
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: /usr/lib/x86_64-linux-gnu/libsodium.a
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/volodbclientapp: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}

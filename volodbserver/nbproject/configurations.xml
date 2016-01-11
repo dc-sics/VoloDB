@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="95">
+<configurationDescriptor version="97">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -57,8 +57,24 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
+    <Elem>Store</Elem>
+    <Elem>Test</Elem>
+    <Elem>Transport</Elem>
+    <Elem>Utils</Elem>
+    <Elem>Cache</Elem>
     <Elem>Store</Elem>
     <Elem>Test</Elem>
     <Elem>Transport</Elem>
@@ -82,11 +98,14 @@
             <pElem>/usr/local/mysql/include/storage/ndb/ndbapi</pElem>
             <pElem>/usr/local/mysql/include/storage/ndb</pElem>
             <pElem>../volodb-common</pElem>
-            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu/</pElem>
           </incDir>
           <commandLine>-D_GLIBCXX_USE_NANOSLEEP</commandLine>
         </ccTool>
         <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/lib/x86_64-linux-gnu</pElem>
+          </linkerAddLib>
           <commandlineTool>g++</commandlineTool>
           <linkerLibItems>
             <linkerLibFileItem>/usr/local/mysql/lib/libndbclient_static.a</linkerLibFileItem>
@@ -104,13 +123,15 @@
                             OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb-common.a">
               </makeArtifact>
             </linkerLibProjectItem>
-            <linkerLibFileItem>/usr/local/lib/libzmq.a</linkerLibFileItem>
-            <linkerLibFileItem>/usr/local/lib/libprotobuf.a</linkerLibFileItem>
-            <linkerLibFileItem>/usr/local/lib/libboost_program_options.a</linkerLibFileItem>
-            <linkerLibFileItem>/usr/local/lib/libboost_thread.a</linkerLibFileItem>
-            <linkerLibFileItem>/usr/local/lib/libboost_system.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/lib/x86_64-linux-gnu/libzmq.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/lib/x86_64-linux-gnu/libprotobuf.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/lib/x86_64-linux-gnu/libboost_program_options.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/lib/x86_64-linux-gnu/libboost_thread.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/lib/x86_64-linux-gnu/libboost_system.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/lib/x86_64-linux-gnu/libsodium.a</linkerLibFileItem>
+            <linkerLibFileItem>/usr/lib/x86_64-linux-gnu/libpgm.a</linkerLibFileItem>
           </linkerLibItems>
-          <commandLine>-lpthread -ldl -lrt</commandLine>
+          <commandLine>-lpthread -ldl -lrt -lzmq</commandLine>
         </linkerTool>
       </compileType>
       <item path="Cache/TableInfoCache.cpp" ex="false" tool="1" flavor2="8">

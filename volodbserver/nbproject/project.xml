@@ -17,6 +17,11 @@
                 <sourceRootElem>Transport</sourceRootElem>
                 <sourceRootElem>Utils</sourceRootElem>
                 <sourceRootElem>Cache</sourceRootElem>
+                <sourceRootElem>Store</sourceRootElem>
+                <sourceRootElem>Test</sourceRootElem>
+                <sourceRootElem>Transport</sourceRootElem>
+                <sourceRootElem>Utils</sourceRootElem>
+                <sourceRootElem>Cache</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

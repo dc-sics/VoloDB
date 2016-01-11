@@ -403,3 +403,26 @@ drop_orders_operation.mutable_store_info()->set_store_name("Orders");
 
 executor.execute({drop_user_operation,drop_orders_operation}, "user_table_oper_id", "orders_table_oper_id");
 ```
+
+Build from Source on Ubuntu
+==============================
+
+1. install MySQL Cluster to /usr/local/mysql
+
+2. Install all the libraries needed to build VoloDB
+
+sudo apt-get install libtool pkg-config build-essential autoconf automake uuid-dev libzmq-dev libpgm-dev libzmq3-dev libsodium-dev libboost-dev libboost-program-options-dev libboost-thread-dev libboost-tools-dev libboost-system-dev libprotobuf-c-dev libprotobuf-dev protobuf-compiler 
+
+git clone https://github.com/dc-sics/VoloDB.git
+cd VoloDB/volodbserver
+git checkout linux
+
+3. Build and install using the bash script:
+sudo ./volodb-install.sh
+
+If you're stuck, here's a list of the static libraries linked in for 64-bit Ubuntu:
+
+LDLIBSOPTIONS=/usr/local/mysql/lib/libndbclient_static.a /usr/local/mysql/lib/libmysqlclient.a /usr/local/mysql/lib/libmysqld.a ../volodb-common/dist/Release/GNU-Linux/libvolodb-common.a /usr/lib/x86_64-linux-gnu/libzmq.a /usr/lib/x86_64-linux-gnu/libprotobuf.a /usr/lib/x86_64-linux-gnu/libboost_program_options.a /usr/lib/x86_64-linux-gnu/libboost_thread.a /usr/lib/x86_64-linux-gnu/libboost_system.a /usr/lib/x86_64-linux-gnu/libpgm.a
+
+
+

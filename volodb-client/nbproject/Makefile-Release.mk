@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-MacOSX
-CND_DLIB_EXT=dylib
+CND_PLATFORM=GNU-Linux
+CND_DLIB_EXT=so
 CND_CONF=Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -68,12 +68,12 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb-client.a: ${OBJECTFILES}
 ${OBJECTDIR}/Executor/Executor.o: Executor/Executor.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Executor
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Executor/Executor.o Executor/Executor.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/include -I../volodb-common -I/usr/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Executor/Executor.o Executor/Executor.cpp
 
 ${OBJECTDIR}/Transport/ClientTransport.o: Transport/ClientTransport.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Transport
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Transport/ClientTransport.o Transport/ClientTransport.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/include -I../volodb-common -I/usr/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Transport/ClientTransport.o Transport/ClientTransport.cpp
 
 # Subprojects
 .build-subprojects:

@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-MacOSX
-CND_DLIB_EXT=dylib
+CND_PLATFORM=GNU-Linux
+CND_DLIB_EXT=so
 CND_CONF=Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -35,14 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/334230207/TableInfoCache.o \
-	${OBJECTDIR}/_ext/349584414/NDBMessageExecutor.o \
-	${OBJECTDIR}/_ext/349584414/NDBMessageProcessor.o \
-	${OBJECTDIR}/_ext/349584414/Store.o \
-	${OBJECTDIR}/_ext/1812407733/TestExecutor.o \
-	${OBJECTDIR}/_ext/1812407733/TestStats.o \
-	${OBJECTDIR}/_ext/485469210/ServerTransport.o \
-	${OBJECTDIR}/_ext/351425518/TransportUtils.o
+	${OBJECTDIR}/_ext/13ebf2bf/TableInfoCache.o \
+	${OBJECTDIR}/_ext/14d63c1e/NDBMessageExecutor.o \
+	${OBJECTDIR}/_ext/14d63c1e/NDBMessageProcessor.o \
+	${OBJECTDIR}/_ext/14d63c1e/Store.o \
+	${OBJECTDIR}/_ext/6c0725b5/TestExecutor.o \
+	${OBJECTDIR}/_ext/6c0725b5/TestStats.o \
+	${OBJECTDIR}/_ext/e31053e6/ServerTransport.o \
+	${OBJECTDIR}/_ext/14f253ee/TransportUtils.o
 
 
 # C Compiler Flags
@@ -71,45 +71,45 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb.a: ${OBJECTFILES}
 	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb.a ${OBJECTFILES} 
 	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libvolodb.a
 
-${OBJECTDIR}/_ext/334230207/TableInfoCache.o: ../volodbserver/Cache/TableInfoCache.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/334230207
+${OBJECTDIR}/_ext/13ebf2bf/TableInfoCache.o: ../volodbserver/Cache/TableInfoCache.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/13ebf2bf
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/334230207/TableInfoCache.o ../volodbserver/Cache/TableInfoCache.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/13ebf2bf/TableInfoCache.o ../volodbserver/Cache/TableInfoCache.cpp
 
-${OBJECTDIR}/_ext/349584414/NDBMessageExecutor.o: ../volodbserver/Store/NDBMessageExecutor.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/349584414
+${OBJECTDIR}/_ext/14d63c1e/NDBMessageExecutor.o: ../volodbserver/Store/NDBMessageExecutor.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/14d63c1e
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/349584414/NDBMessageExecutor.o ../volodbserver/Store/NDBMessageExecutor.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/14d63c1e/NDBMessageExecutor.o ../volodbserver/Store/NDBMessageExecutor.cpp
 
-${OBJECTDIR}/_ext/349584414/NDBMessageProcessor.o: ../volodbserver/Store/NDBMessageProcessor.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/349584414
+${OBJECTDIR}/_ext/14d63c1e/NDBMessageProcessor.o: ../volodbserver/Store/NDBMessageProcessor.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/14d63c1e
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/349584414/NDBMessageProcessor.o ../volodbserver/Store/NDBMessageProcessor.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/14d63c1e/NDBMessageProcessor.o ../volodbserver/Store/NDBMessageProcessor.cpp
 
-${OBJECTDIR}/_ext/349584414/Store.o: ../volodbserver/Store/Store.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/349584414
+${OBJECTDIR}/_ext/14d63c1e/Store.o: ../volodbserver/Store/Store.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/14d63c1e
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/349584414/Store.o ../volodbserver/Store/Store.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/14d63c1e/Store.o ../volodbserver/Store/Store.cpp
 
-${OBJECTDIR}/_ext/1812407733/TestExecutor.o: ../volodbserver/Test/TestExecutor.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1812407733
+${OBJECTDIR}/_ext/6c0725b5/TestExecutor.o: ../volodbserver/Test/TestExecutor.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/6c0725b5
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1812407733/TestExecutor.o ../volodbserver/Test/TestExecutor.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6c0725b5/TestExecutor.o ../volodbserver/Test/TestExecutor.cpp
 
-${OBJECTDIR}/_ext/1812407733/TestStats.o: ../volodbserver/Test/TestStats.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1812407733
+${OBJECTDIR}/_ext/6c0725b5/TestStats.o: ../volodbserver/Test/TestStats.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/6c0725b5
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1812407733/TestStats.o ../volodbserver/Test/TestStats.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6c0725b5/TestStats.o ../volodbserver/Test/TestStats.cpp
 
-${OBJECTDIR}/_ext/485469210/ServerTransport.o: ../volodbserver/Transport/ServerTransport.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/485469210
+${OBJECTDIR}/_ext/e31053e6/ServerTransport.o: ../volodbserver/Transport/ServerTransport.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/e31053e6
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/485469210/ServerTransport.o ../volodbserver/Transport/ServerTransport.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/e31053e6/ServerTransport.o ../volodbserver/Transport/ServerTransport.cpp
 
-${OBJECTDIR}/_ext/351425518/TransportUtils.o: ../volodbserver/Utils/TransportUtils.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/351425518
+${OBJECTDIR}/_ext/14f253ee/TransportUtils.o: ../volodbserver/Utils/TransportUtils.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/14f253ee
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/351425518/TransportUtils.o ../volodbserver/Utils/TransportUtils.cpp
+	$(COMPILE.cc) -O2 -I/usr/local/mysql/include -I/usr/local/mysql/include/storage/ndb/ndbapi -I/usr/local/mysql/include/storage/ndb -I/usr/local/mysql/include/storage/ndb/ -I/usr/local/include -I../volodb-common -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/14f253ee/TransportUtils.o ../volodbserver/Utils/TransportUtils.cpp
 
 # Subprojects
 .build-subprojects:
