@@ -1,7 +1,7 @@
 # Introduction
 VoloDB is a NoSQL key value store that provides high throughput in terms of both reads and writes but without compromising on ACID properties. VoloDB is built over MySQL Cluster and instead of using high-level abstractions, it communicates with the cluster using the highly efficient native low level C++ asynchronous NDB API. VoloDB talks directly to the data nodes without the need to go through MySQL Server that further enhances the performance. It exploits many of MySQL Cluster’s features such as primary and partition key lookups and prune index scans to hit only one of the data nodes to achieve maximum performance. VoloDB offers a high level abstraction that hides the com- plexity of the underlying system without requiring the user to think about internal details. Our key value store also offers various additional features such as multi-query transactions and bulk operation support. C++ client libraries are also provided to allow developers to interface easily with our server.
 
-VoloDB was implemented as part of Masters's thesis at KTH Royal Institute of Technology under supervision of Dr Jim Dowling.
+VoloDB was implemented as part of Masters's thesis at KTH Royal Institute of Technology under supervision of Dr Jim Dowling. The thesis report can be found at: *http://www.diva-portal.org/smash/get/diva2:849736/FULLTEXT01.pdf*
 
 # Project Structure
 
